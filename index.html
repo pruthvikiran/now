@@ -7,13 +7,17 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Textile Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content=" " />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <script src="js/jquery.min.js"></script>
+
+<style>
+.mySlides {display:none;}
+</style>
+
 </head>
 <body>
 <!-- header -->
@@ -32,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 		</div>
 	</div>
-	<div class="banner">
+	<div class="banner1">
 		<div class="container">
 			<div class="head-nav">
 				<span class="menu"> </span>
@@ -46,6 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</ul>
 				</div>
+				
 						<div class="clearfix"> </div>
 					<!-- script-for-nav -->
 					<script>
@@ -56,50 +61,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});
 					</script>
 				<!-- script-for-nav -->
-				<section class="slider">
-						<div class="flexslider">
-							<ul class="slides">
-								<li>
-									<div class="banner-info">
-										<h1>Welcome to Now And Wow Appearels Pvt Ltd</h1>
-										<p>Now And Wow Appearels Pvt Ltd is one of the most shining names in the dynamic world Fashion Garmentson own brand name,we firmly believe that thesatisfaction of the valued customers is the focal point of its business.</p>	
-									</div>
-								</li>
-								<li>
-									<div class="banner-info">
-										<h1>Our company Manufacturing System</h1>
-										<p>A professionally managed company is leading manufacturing of fine quality knits and woven garment ladies and as well as gents.</p>	
-									</div>
-								</li>
-								<li>	
-									<div class="banner-info">
-										<h1>About Our Products.</h1>
-										<p>We performance textiles are found in almost every application. You might find them enhancing the look of your vehicle interior, filtering clean water, or helping athletes perform at the highest levels. No matter where they’re used, our products are designed to uphold the highest standards of performance.</p>	
-									</div>
-									<div class="clearfix"> </div>
-								</li>
-							</ul>
-						</div>
-					</section>
-						<!-- FlexSlider -->
-							  <script defer src="js/jquery.flexslider.js"></script>
-							  <script type="text/javascript">
-								$(function(){
-								  SyntaxHighlighter.all();
-								});
-								$(window).load(function(){
-								  $('.flexslider').flexslider({
-									animation: "slide",
-									start: function(slider){
-									  $('body').removeClass('loading');
-									}
-								  });
-								});
-							  </script>
-						<!-- FlexSlider -->
+				
 			</div>
-		</div>	
+		</div>
+<!--banner-->
+<div class="banner">
+	<div class="container">		
+		<div class="w3-content w3-section" style="max-width:100%;">
+ 					 <img class="mySlides" src="images/bg/now.jpg" style="width:100%">
+ 					 <img class="mySlides" src="images/bg/3.jpg" style="width:100%">
+ 					 <img class="mySlides" src="images/bg/bg4.jpg" style="width:100%">
+					 <img class="mySlides" src="images/bg/bg2.jpg" style="width:100%">
+					</div>
+
+				<script>
+					var myIndex = 0;
+						carousel();
+
+					function carousel() {
+    				var i;
+    				var x = document.getElementsByClassName("mySlides");
+    				for (i = 0; i < x.length; i++) {
+       				x[i].style.display = "none";  
+    				}
+    				myIndex++;
+    				if (myIndex > x.length) {myIndex = 1}    
+    				x[myIndex-1].style.display = "block";  
+    				setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+					</script>
+   </div>
+</div>
 <!-- header -->
+
 <!-- phase -->
 	<div class="phase">
 		<div class="container">
